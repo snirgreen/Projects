@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy – TagMate</title>
+  <meta name="description" content="Privacy Policy for TagMate, an internal Chrome extension for tagging workflows." />
+  <style>
+    :root{
+      --blue:#0b5fff;
+      --dark:#0a2a4a;
+      --muted:#6b7a90;
+      --bg:#f7f9fc;
+      --card:#ffffff;
+      --border:#e6eef7;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji",sans-serif;
+      color:var(--dark);
+      background:var(--bg);
+      line-height:1.55;
+    }
+    header{
+      background:linear-gradient(180deg, var(--dark), #0f3e73);
+      color:#fff;
+      padding:56px 20px 48px;
+      text-align:center;
+    }
+    header h1{
+      margin:0 0 8px;
+      font-size:clamp(1.6rem, 2.2vw + 1rem, 2.2rem);
+      letter-spacing:0.2px;
+    }
+    header p{
+      margin:0;
+      color:#d9e6f7;
+    }
+    main{
+      max-width:960px;
+      margin:-28px auto 64px;
+      padding:0 20px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:28px;
+      box-shadow:0 6px 24px rgba(10,42,74,0.06);
+    }
+    h2{
+      margin:24px 0 10px;
+      font-size:1.2rem;
+    }
+    .meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.6rem 1.2rem;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+    .meta span{white-space:nowrap}
+    ul{margin:8px 0 0 1.2rem}
+    code{
+      background:#f1f5ff;
+      border:1px dashed #cfe0ff;
+      padding:.1rem .35rem;
+      border-radius:6px;
+      font-size:.95em;
+    }
+    footer{
+      margin-top:24px;
+      padding-top:16px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:.95rem;
+    }
+    a{ color:var(--blue); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Privacy Policy – TagMate</h1>
+    <p>Last updated: October 29, 2025</p>
+  </header>
+  <main>
+    <section class="card">
+      <p><strong>TagMate</strong> is an internal Chrome extension that enables tagging and annotation workflows on designated internal web pages. This policy explains what data the extension uses and how it is handled.</p>
+
+      <h2>Data Collection</h2>
+      <p>TagMate does not collect or transmit personal user data. The extension stores only the minimum technical data required to provide its functionality, which may include:</p>
+      <ul>
+        <li>Tag identifiers and labels</li>
+        <li>Basic page context (e.g., URL) for associating tags with pages the user explicitly interacts with</li>
+        <li>User interface preferences and feature settings</li>
+      </ul>
+
+      <h2>Data Usage</h2>
+      <p>Any stored data is used solely to provide tagging features on authorized pages. Processing occurs locally in the user’s browser or within organization-controlled services, where applicable. Data is not used for advertising or profiling.</p>
+
+      <h2>Data Sharing</h2>
+      <p>TagMate does not share data with third parties.</p>
+
+      <h2>Permissions</h2>
+      <p>TagMate requests the following Chrome permissions strictly to enable its core functionality:</p>
+      <ul>
+        <li><code>activeTab</code> – Identify the current tab and inject the tagging UI only after explicit user activation.</li>
+        <li><code>tabs</code> – Obtain the active tab ID/URL to associate and restore tags for that page.</li>
+        <li><code>scripting</code> – Programmatically inject packaged content scripts that render the tagging interface on permitted pages.</li>
+        <li><code>storage</code> – Save tag metadata and user preferences locally (and optionally sync within the browser ecosystem).</li>
+        <li><strong>Host permissions</strong> – Limit operation to designated internal domains (e.g., <code>https://internal.example.org/*</code>), preventing access on unrelated sites.</li>
+      </ul>
+
+      <h2>Remote Code</h2>
+      <p>TagMate does <strong>not</strong> execute remote code. All executable code is bundled within the extension. Network requests are limited to retrieving non-executable data (such as JSON) from organization-controlled endpoints.</p>
+
+      <h2>Retention</h2>
+      <p>Data is retained only as long as needed for tagging workflows and may be removed according to organizational policy or upon user/admin request.</p>
+
+      <h2>Access</h2>
+      <p>This extension is intended for authorized users within the organization and is not available for public installation.</p>
+
+      <h2>Contact</h2>
+      <p>For privacy-related questions or requests, contact: <a href="mailto:tagmate-privacy@example.org">tagmate-privacy@example.org</a>.</p>
+
+      <footer>
+        <p>If this policy is hosted on an internal site, ensure it is accessible to reviewers during extension review.</p>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
